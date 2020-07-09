@@ -1,15 +1,17 @@
-package com.kxinds.springcloud;
+package kxinds.springcloud;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
 /**
  * @Author EiletXie
- * @Since 2020/3/8 23:13
+ * @Since 2020/3/9 13:49
  */
 @SpringBootApplication
-public class PaymentMain8001 {
+//@RibbonClient(name = "CLOUD-PAYMENT-SERVICE",configuration = MySelfRule.class)
+public class OrderMain80 {
 
     public static void main(String[] args) {
-        SpringApplication.run(PaymentMain8001.class,args);
+        SpringApplication.run(OrderMain80.class,args);
     }
 }
