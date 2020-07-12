@@ -1,6 +1,5 @@
-package com.kxinds.springcloud.entities;
+package entities;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -24,6 +23,16 @@ public class CommonResult<T> {
      */
     public CommonResult(Integer code, String message, T data) {
         this.data = data;
+        this.code = code;
+        this.message = message;
+    }
+
+    /**
+     * 构造函数
+     * @param code  校验码
+     * @param message 异常/提示信息
+     */
+    public CommonResult(Integer code, String message) {
         this.code = code;
         this.message = message;
     }

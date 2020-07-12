@@ -1,6 +1,6 @@
 package com.kxinds.springcloud.service;
 
-import com.kxinds.springcloud.entities.Payment;
+import entities.Payment;
 import org.apache.ibatis.annotations.Param;
 
 /**

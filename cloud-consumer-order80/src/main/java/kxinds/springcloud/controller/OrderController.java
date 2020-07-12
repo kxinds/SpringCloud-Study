@@ -1,7 +1,7 @@
 package kxinds.springcloud.controller;
 
-import kxinds.springcloud.entities.CommonResult;
-import kxinds.springcloud.entities.Payment;
+import entities.CommonResult;
+import entities.Payment;
 import kxinds.springcloud.lb.LoadBalancer;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.ResponseEntity;
