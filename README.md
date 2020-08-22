@@ -14,6 +14,10 @@ Eureka（不更新）、zooKeeper、Nacos、 Consul
    
    内置、一个轮询的负载均衡器物，应用启动后，会像Eureka Server 发送心痛（默认周期30s）
    如果多个周期，未收到心跳，Eureka Server会从服务注册将该节点移除（默认90s）
+   
+* 集群Eureka原理
+  
+  互相注册，相互守望。 A注册中心-》B注册中心—》A注册中心
 
 * 集群Eureka配置
 
@@ -38,4 +42,9 @@ eureka:
 #    enable-self-preservation: false
 #    eviction-interval-timer-in-ms: 2000
 ```   
+ * Ribbon与Eureka整合
+   
+   客户端直接调用Eureka服务， @LoadBalanced注解就实现负载均衡
+  
+ 
     
